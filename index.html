@@ -4,7 +4,12 @@
 </head>
 <body>
   <script type="text/javascript">
-    location.href = 'https://www.yahoo.co.jp';
+    var today = newDate();
+    var start_from = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+    const q = '松江';
+    
+    var url = `https://connpass.com/search/?q=${q}&start_from=${today}&start_to=`;
+    location.href = url;
   </script>
 </body>
 </html>
